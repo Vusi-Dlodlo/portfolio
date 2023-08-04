@@ -1,0 +1,154 @@
+.projects-section {
+    background-color: var(--primary-bg) !important;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    min-width: 480px;
+}
+
+.project-section .fa-solid {
+    color: var(--primary-color);
+    font-size: 35px;
+}
+
+.projects-section__header {
+    font-size: 25px;
+    font-weight: lighter;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.projects-section__header .fa-solid {
+    color: var(--bg-color);
+    font-size: 35px;
+    gap: 2%;
+}
+
+.card-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 10px;
+    padding-top: 1%;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: .1px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px var(--bg-color);
+    width: 16rem;
+    margin: 5px;
+    background: var(--text-color);
+}
+.card:hover {
+    transform: scale(1) translateY(-3%);
+    transition: ease all 1s;
+}
+.card>img {
+    border-radius: 5px 5px 0 0;
+    height: 150px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.card-content {
+    padding: 20px;
+    color: var(--bg-color);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: var(--bg-color);
+}
+
+.card p {
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--bg-color);
+}
+
+.card-footer {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 3px 0 3px;
+}
+
+.card-content .card-button {
+    border: solid var(--secondary-color) 1px;
+    justify-content: center;
+    text-align: center;
+    padding: 8px 32px;
+    margin: 12px 40px;
+    background: var(--secondary-color);
+}
+
+.card-content .card-button:hover {
+    transition: .3s ease all;
+    border: 1px solid var(--text-color);
+    background: var(--primary-bg);
+}
+
+
+.see-more {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+.see-more a {
+    justify-content: center;
+    text-align: center;
+    padding: 10px 0;
+    margin: 1px 3px;
+}
+
+.see-more a:hover {
+    transition: .1s ease all;
+    border-bottom: 3px solid var(--text-color);
+
+}
+
+.collapse-content {
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: max-height 1s;
+}
+
+.collapse-content {
+    background: var(--text-color);
+}
+
+.collapse-content p {
+    padding: 50px 10px;
+    margin: 0;
+    font-size: 13px;
+}
+
+.card-button {
+    cursor: pointer;
+}
+
+.checkbox,
+.check {
+    display: none;
+}
+
+.checkbox:checked+.collapse-content {
+    max-height: 80vh;
+    opacity: 1;
+    visibility: visible;
+    transition: max-height ease-in .9s;
+}
+.checkbox:not(:checked) +.collapse-content {
+    transition: max-height ease-out .9s;
+}

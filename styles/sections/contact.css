@@ -1,0 +1,28 @@
+.contact-me {
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    min-width: 480px;
+}
+
+.contact-me .fa-solid {
+    color: var(--primary-color);
+    font-size: 35px;
+    padding-top: 1%;
+}
+
+.contact-header h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 45px;
+    padding-bottom: 2%;
+}
+
+.contact-me__buttons {
+    margin: 5% auto;
+    gap: 1%;
+}
